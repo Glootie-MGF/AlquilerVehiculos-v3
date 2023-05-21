@@ -9,8 +9,9 @@
 <?import javafx.scene.layout.GridPane?>
 <?import javafx.scene.layout.RowConstraints?>
 <?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
 
-<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="415.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.iesalandalus.programacion.alquilervehiculos.vista.grafica.controladores.VentanaBuscarCliente">
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="415.0" prefWidth="600.0" style="-fx-background-color: #f4ebf9;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.iesalandalus.programacion.alquilervehiculos.vista.grafica.controladores.VentanaBuscarCliente">
    <children>
       <GridPane>
         <columnConstraints>
@@ -27,6 +28,9 @@
                <GridPane.margin>
                   <Insets left="13.0" />
                </GridPane.margin>
+               <font>
+                  <Font name="Times New Roman Bold" size="13.0" />
+               </font>
             </Button>
             <TextField fx:id="tfDniBuscar" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="26.0" prefWidth="235.0" promptText="DNI" GridPane.rowIndex="1">
                <GridPane.margin>
@@ -35,7 +39,7 @@
             </TextField>
          </children>
       </GridPane>
-      <TableView fx:id="tvClientes" prefHeight="281.0" prefWidth="600.0">
+      <TableView fx:id="tvClientes" prefHeight="281.0" prefWidth="600.0" style="-fx-border-color: #e6d1f2;">
         <columns>
           <TableColumn fx:id="tcDni" prefWidth="130.0" text="DNI" />
           <TableColumn fx:id="tcNombre" minWidth="0.0" prefWidth="326.0" text="NOMBRE" />
@@ -46,6 +50,9 @@
          <VBox.margin>
             <Insets left="270.0" top="7.0" />
          </VBox.margin>
+         <font>
+            <Font name="Times New Roman Bold" size="13.0" />
+         </font>
       </Button>
    </children>
 </VBox>

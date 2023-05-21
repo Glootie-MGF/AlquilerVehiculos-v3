@@ -5,10 +5,11 @@
 <?import javafx.scene.control.TableColumn?>
 <?import javafx.scene.control.TableView?>
 <?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
 
-<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="303.0" prefWidth="893.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.iesalandalus.programacion.alquilervehiculos.vista.grafica.controladores.VentanaMostrarAlquilerCliente">
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="303.0" prefWidth="893.0" style="-fx-background-color: #f4ebf9;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.iesalandalus.programacion.alquilervehiculos.vista.grafica.controladores.VentanaMostrarAlquilerCliente">
    <children>
-      <TableView fx:id="tvAlquileresCliente" prefHeight="258.0" prefWidth="893.0">
+      <TableView fx:id="tvAlquileresCliente" prefHeight="258.0" prefWidth="893.0" style="-fx-border-color: #e6d1f2;">
          <columns>
             <TableColumn fx:id="tcCliente" maxWidth="1.7976931348623157E308" prefWidth="217.0" text="CLIENTE" />
             <TableColumn fx:id="tcVehiculo" maxWidth="1.7976931348623157E308" prefWidth="249.0" text="VEHÍCULO" />
@@ -21,6 +22,9 @@
          <VBox.margin>
             <Insets left="400.0" top="7.0" />
          </VBox.margin>
+         <font>
+            <Font name="Times New Roman Bold" size="13.0" />
+         </font>
       </Button>
    </children>
 </VBox>

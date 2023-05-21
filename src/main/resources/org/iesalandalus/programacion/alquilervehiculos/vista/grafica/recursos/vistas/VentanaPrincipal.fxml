@@ -38,77 +38,148 @@
 <?import javafx.scene.control.Menu?>
 <?import javafx.scene.control.MenuBar?>
 <?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.iesalandalus.programacion.alquilervehiculos.vista.grafica.controladores.VentanaPrincipal">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #c1e1c1;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.iesalandalus.programacion.alquilervehiculos.vista.grafica.controladores.VentanaPrincipal">
    <children>
       <HBox layoutX="1.0" layoutY="28.0" prefHeight="373.0" prefWidth="600.0">
          <children>
-            <VBox prefHeight="301.0" prefWidth="200.0">
+            <VBox prefHeight="373.0" prefWidth="238.0">
                <children>
-                  <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="57.0" prefWidth="202.0" text="CLIENTES" textAlignment="CENTER" />
-                  <Button fx:id="btAniadirCliente" layoutX="10.0" layoutY="67.0" mnemonicParsing="false" onAction="#aniadirCliente" prefHeight="67.0" prefWidth="120.0" text="AÑADIR">
+                  <HBox prefHeight="57.0" prefWidth="214.0">
+                     <children>
+                        <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="57.0" prefWidth="136.0" text="CLIENTES" textAlignment="CENTER" textFill="#5b1556">
+                           <font>
+                              <Font name="Hiragino Sans W9" size="15.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="29.0" />
+                           </HBox.margin>
+                        </Label>
+                        <ImageView fitHeight="33.0" fitWidth="56.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../imagenes/clients-icon.jpeg" />
+                           </image>
+                           <HBox.margin>
+                              <Insets top="14.0" />
+                           </HBox.margin>
+                        </ImageView>
+                     </children>
+                  </HBox>
+                  <Button fx:id="btAniadirCliente" layoutX="10.0" layoutY="67.0" mnemonicParsing="false" onAction="#aniadirCliente" prefHeight="67.0" prefWidth="120.0" style="-fx-border-color: #87c587; -fx-border-width: 2px; -fx-border-radius: 5px;" text="AÑADIR">
                      <VBox.margin>
-                        <Insets left="40.0" />
+                        <Insets left="40.0" top="10.0" />
                      </VBox.margin>
+                     <font>
+                        <Font name="Times New Roman Bold" size="13.0" />
+                     </font>
                   </Button>
-                  <Button fx:id="btModificarCliente" alignment="CENTER" contentDisplay="CENTER" layoutX="10.0" layoutY="93.0" mnemonicParsing="false" onAction="#modificarCliente" prefHeight="67.0" prefWidth="120.0" text="MODIFICAR">
+                  <Button fx:id="btModificarCliente" alignment="CENTER" contentDisplay="CENTER" layoutX="10.0" layoutY="93.0" mnemonicParsing="false" onAction="#modificarCliente" prefHeight="67.0" prefWidth="120.0" style="-fx-border-color: #87c587; -fx-border-width: 2px; -fx-border-radius: 5px;" text="MODIFICAR">
                      <VBox.margin>
                         <Insets left="40.0" top="20.0" />
                      </VBox.margin>
+                     <font>
+                        <Font name="Times New Roman Bold" size="13.0" />
+                     </font>
                   </Button>
-                  <Button fx:id="btListarCliente" mnemonicParsing="false" onAction="#listarCliente" prefHeight="67.0" prefWidth="120.0" text="BUSCAR">
+                  <Button fx:id="btListarCliente" mnemonicParsing="false" onAction="#listarCliente" prefHeight="67.0" prefWidth="120.0" style="-fx-border-color: #87c587; -fx-border-width: 2px; -fx-border-radius: 5px;" text="BUSCAR">
                      <VBox.margin>
                         <Insets left="40.0" top="20.0" />
                      </VBox.margin>
+                     <font>
+                        <Font name="Times New Roman Bold" size="13.0" />
+                     </font>
                   </Button>
                </children>
             </VBox>
-            <VBox layoutX="10.0" layoutY="10.0" prefHeight="373.0" prefWidth="200.0">
+            <VBox layoutX="10.0" layoutY="10.0" prefHeight="373.0" prefWidth="240.0">
                <children>
-                  <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="57.0" prefWidth="202.0" text="VEHÍCULOS" textAlignment="CENTER" />
-                  <Button fx:id="btAniadirVehiculo" mnemonicParsing="false" onAction="#aniadirVehiculo" prefHeight="67.0" prefWidth="120.0" text="AÑADIR">
+                  <HBox>
+                     <children>
+                        <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="57.0" prefWidth="118.0" text="VEHÍCULOS" textAlignment="CENTER" textFill="#5b1556">
+                           <font>
+                              <Font name="Hiragino Sans W9" size="15.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="27.0" />
+                           </HBox.margin>
+                        </Label>
+                        <ImageView fitHeight="58.0" fitWidth="86.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../imagenes/car-icon2.png" />
+                           </image>
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                        </ImageView>
+                     </children>
+                  </HBox>
+                  <Button fx:id="btAniadirVehiculo" mnemonicParsing="false" onAction="#aniadirVehiculo" prefHeight="67.0" prefWidth="120.0" style="-fx-border-color: #87c587; -fx-border-width: 2px; -fx-border-radius: 5px;" text="AÑADIR">
                      <VBox.margin>
-                        <Insets left="40.0" />
+                        <Insets left="40.0" top="10.0" />
                      </VBox.margin>
+                     <font>
+                        <Font name="Times New Roman Bold" size="13.0" />
+                     </font>
                   </Button>
-                  <Button fx:id="btModificarVehiculo" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#modificarVehiculo" prefHeight="67.0" prefWidth="120.0" text="MODIFICAR">
+                  <Button fx:id="btModificarVehiculo" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#modificarVehiculo" prefHeight="67.0" prefWidth="120.0" style="-fx-border-color: #87c587; -fx-border-width: 2px; -fx-border-radius: 5px;" text="MODIFICAR">
                      <VBox.margin>
                         <Insets left="40.0" top="20.0" />
                      </VBox.margin>
+                     <font>
+                        <Font name="Times New Roman Bold" size="13.0" />
+                     </font>
                   </Button>
-                  <Button fx:id="btListarVehiculo" mnemonicParsing="false" onAction="#listarVehiculo" prefHeight="67.0" prefWidth="120.0" text="BUSCAR">
+                  <Button fx:id="btListarVehiculo" mnemonicParsing="false" onAction="#listarVehiculo" prefHeight="67.0" prefWidth="120.0" style="-fx-border-color: #87c587; -fx-border-width: 2px; -fx-border-radius: 5px;" text="BUSCAR">
                      <VBox.margin>
                         <Insets left="40.0" top="20.0" />
                      </VBox.margin>
+                     <font>
+                        <Font name="Times New Roman Bold" size="13.0" />
+                     </font>
                   </Button>
                </children>
             </VBox>
-            <VBox layoutX="210.0" layoutY="10.0" prefHeight="373.0" prefWidth="200.0">
+            <VBox layoutX="210.0" layoutY="10.0" prefHeight="373.0" prefWidth="198.0">
                <children>
-                  <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="57.0" prefWidth="202.0" text="ALQUILERES" textAlignment="CENTER" />
-                  <Button fx:id="btAniadirAlquiler" mnemonicParsing="false" onAction="#aniadirAlquiler" prefHeight="67.0" prefWidth="120.0" text="AÑADIR">
+                  <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="57.0" prefWidth="202.0" text="ALQUILERES" textAlignment="CENTER" textFill="#5b1556">
+                     <font>
+                        <Font name="Hiragino Sans W9" size="15.0" />
+                     </font></Label>
+                  <Button fx:id="btAniadirAlquiler" mnemonicParsing="false" onAction="#aniadirAlquiler" prefHeight="67.0" prefWidth="120.0" style="-fx-border-color: #87c587; -fx-border-width: 2px; -fx-border-radius: 5px;" text="AÑADIR">
                      <VBox.margin>
-                        <Insets left="40.0" />
+                        <Insets left="30.0" top="10.0" />
                      </VBox.margin>
+                     <font>
+                        <Font name="Times New Roman Bold" size="13.0" />
+                     </font>
                   </Button>
-                  <Button fx:id="btModificarAlquiler" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#modificarAlquiler" prefHeight="67.0" prefWidth="120.0" text="MODIFICAR">
+                  <Button fx:id="btModificarAlquiler" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#modificarAlquiler" prefHeight="67.0" prefWidth="120.0" style="-fx-border-color: #87c587; -fx-border-width: 2px; -fx-border-radius: 5px;" text="MODIFICAR">
                      <VBox.margin>
-                        <Insets left="40.0" top="20.0" />
+                        <Insets left="30.0" top="20.0" />
                      </VBox.margin>
+                     <font>
+                        <Font name="Times New Roman Bold" size="13.0" />
+                     </font>
                   </Button>
-                  <Button fx:id="btListarAlquiler" mnemonicParsing="false" onAction="#listarAlquiler" prefHeight="67.0" prefWidth="120.0" text="BUSCAR">
+                  <Button fx:id="btListarAlquiler" mnemonicParsing="false" onAction="#listarAlquiler" prefHeight="67.0" prefWidth="120.0" style="-fx-border-color: #87c587; -fx-border-width: 2px; -fx-border-radius: 5px;" text="BUSCAR">
                      <VBox.margin>
-                        <Insets left="40.0" top="20.0" />
+                        <Insets left="30.0" top="20.0" />
                      </VBox.margin>
+                     <font>
+                        <Font name="Times New Roman Bold" size="13.0" />
+                     </font>
                   </Button>
                </children>
             </VBox>
          </children>
       </HBox>
-      <MenuBar layoutX="-2.0" layoutY="-2.0" prefHeight="31.0" prefWidth="600.0">
+      <MenuBar layoutX="-2.0" layoutY="-2.0" prefHeight="31.0" prefWidth="600.0" style="-fx-background-color: #f4ebf9;">
         <menus>
           <Menu fx:id="mbClientes" mnemonicParsing="false" text="Clientes">
             <items>

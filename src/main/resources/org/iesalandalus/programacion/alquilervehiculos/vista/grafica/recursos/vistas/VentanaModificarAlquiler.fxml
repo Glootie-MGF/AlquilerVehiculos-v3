@@ -8,11 +8,12 @@
 <?import javafx.scene.layout.ColumnConstraints?>
 <?import javafx.scene.layout.GridPane?>
 <?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
 
-<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="254.0" prefWidth="465.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.iesalandalus.programacion.alquilervehiculos.vista.grafica.controladores.VentanaModificarAlquiler">
+<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="254.0" prefWidth="465.0" style="-fx-background-color: #f4ebf9;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.iesalandalus.programacion.alquilervehiculos.vista.grafica.controladores.VentanaModificarAlquiler">
    <columnConstraints>
-      <ColumnConstraints hgrow="SOMETIMES" maxWidth="178.0" minWidth="10.0" prefWidth="137.0" />
-      <ColumnConstraints hgrow="SOMETIMES" maxWidth="273.0" minWidth="10.0" prefWidth="224.0" />
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="178.0" minWidth="10.0" prefWidth="156.0" />
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="273.0" minWidth="10.0" prefWidth="211.0" />
       <ColumnConstraints hgrow="SOMETIMES" maxWidth="253.0" minWidth="10.0" prefWidth="96.0" />
    </columnConstraints>
    <rowConstraints>
@@ -23,18 +24,27 @@
       <RowConstraints maxHeight="131.0" minHeight="10.0" prefHeight="56.0" vgrow="SOMETIMES" />
    </rowConstraints>
    <children>
-      <Label alignment="CENTER_RIGHT" contentDisplay="RIGHT" prefHeight="17.0" prefWidth="113.0" text="MATRÍCULA">
+      <Label alignment="CENTER_RIGHT" contentDisplay="RIGHT" prefHeight="17.0" prefWidth="113.0" text="MATRÍCULA" GridPane.halignment="RIGHT">
          <GridPane.margin>
             <Insets right="2.0" />
-         </GridPane.margin></Label>
-      <Label alignment="CENTER_RIGHT" contentDisplay="RIGHT" layoutX="10.0" layoutY="25.0" prefHeight="17.0" prefWidth="111.0" text="DNI" GridPane.rowIndex="1">
+         </GridPane.margin>
+         <font>
+            <Font name="Times New Roman" size="13.0" />
+         </font></Label>
+      <Label alignment="CENTER_RIGHT" contentDisplay="RIGHT" layoutX="10.0" layoutY="25.0" prefHeight="17.0" prefWidth="111.0" text="DNI" GridPane.halignment="RIGHT" GridPane.rowIndex="1">
          <GridPane.margin>
             <Insets right="2.0" />
-         </GridPane.margin></Label>
-      <Label alignment="CENTER_RIGHT" contentDisplay="RIGHT" prefHeight="17.0" prefWidth="113.0" text="FECHA ALQUILER" GridPane.rowIndex="2" GridPane.valignment="TOP">
+         </GridPane.margin>
+         <font>
+            <Font name="Times New Roman" size="13.0" />
+         </font></Label>
+      <Label alignment="CENTER_RIGHT" contentDisplay="RIGHT" prefHeight="17.0" prefWidth="113.0" text="FECHA ALQUILER" GridPane.halignment="RIGHT" GridPane.rowIndex="2" GridPane.valignment="TOP">
          <GridPane.margin>
             <Insets right="2.0" top="25.0" />
          </GridPane.margin>
+         <font>
+            <Font name="Times New Roman" size="13.0" />
+         </font>
       </Label>
       <TextField fx:id="tfMatricula" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="31.0" prefWidth="207.0" GridPane.columnIndex="1">
          <GridPane.margin>
@@ -46,15 +56,21 @@
             <Insets left="10.0" />
          </GridPane.margin>
       </TextField>
-      <Button fx:id="btBorrarAlquiler" alignment="CENTER" contentDisplay="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#borrarAlquiler" prefHeight="26.0" prefWidth="73.0" text="BORRAR" GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.rowIndex="4">
+      <Button fx:id="btBorrarAlquiler" alignment="CENTER" contentDisplay="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#borrarAlquiler" prefHeight="26.0" prefWidth="79.0" text="BORRAR" GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.rowIndex="4">
          <GridPane.margin>
             <Insets right="13.0" />
          </GridPane.margin>
+         <font>
+            <Font name="Times New Roman Bold" size="13.0" />
+         </font>
       </Button>
-      <Button fx:id="btCancelar" alignment="CENTER" cancelButton="true" contentDisplay="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#cancelar" prefHeight="26.0" prefWidth="84.0" text="CANCELAR" GridPane.columnIndex="2" GridPane.halignment="LEFT" GridPane.rowIndex="4">
+      <Button fx:id="btCancelar" alignment="CENTER" cancelButton="true" contentDisplay="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#cancelar" prefHeight="26.0" prefWidth="94.0" text="CANCELAR" GridPane.columnIndex="2" GridPane.halignment="LEFT" GridPane.rowIndex="4">
          <GridPane.margin>
             <Insets />
          </GridPane.margin>
+         <font>
+            <Font name="Times New Roman Bold" size="13.0" />
+         </font>
       </Button>
       <DatePicker fx:id="dpFechaAlquiler" prefHeight="34.0" prefWidth="206.0" GridPane.columnIndex="1" GridPane.rowIndex="2" GridPane.valignment="TOP">
          <GridPane.margin>
@@ -65,17 +81,26 @@
          <GridPane.margin>
             <Insets left="10.0" top="17.0" />
          </GridPane.margin>
+         <font>
+            <Font name="Times New Roman Bold" size="13.0" />
+         </font>
       </Button>
-      <Label alignment="CENTER_RIGHT" contentDisplay="RIGHT" prefHeight="17.0" prefWidth="129.0" text="FECHA DEVOLUCIÓN" GridPane.rowIndex="3" />
+      <Label alignment="CENTER_RIGHT" contentDisplay="RIGHT" prefHeight="17.0" prefWidth="140.0" text="FECHA DEVOLUCIÓN" GridPane.halignment="RIGHT" GridPane.rowIndex="3">
+         <font>
+            <Font name="Times New Roman" size="13.0" />
+         </font></Label>
       <DatePicker fx:id="dpFechaDevolucion" prefHeight="34.0" prefWidth="206.0" GridPane.columnIndex="1" GridPane.rowIndex="3">
          <GridPane.margin>
             <Insets left="10.0" />
          </GridPane.margin>
       </DatePicker>
-      <Button fx:id="btDevolverAlquiler" alignment="CENTER" contentDisplay="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#devolverAlquiler" prefHeight="26.0" prefWidth="82.0" text="DEVOLVER" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.rowIndex="4">
+      <Button fx:id="btDevolverAlquiler" alignment="CENTER" contentDisplay="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#devolverAlquiler" prefHeight="26.0" prefWidth="92.0" text="DEVOLVER" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.rowIndex="4">
          <GridPane.margin>
-            <Insets left="40.0" />
+            <Insets left="13.0" />
          </GridPane.margin>
+         <font>
+            <Font name="Times New Roman Bold" size="13.0" />
+         </font>
       </Button>
    </children>
 </GridPane>

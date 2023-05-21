@@ -5,10 +5,11 @@
 <?import javafx.scene.control.TableColumn?>
 <?import javafx.scene.control.TableView?>
 <?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
 
-<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="187.0" prefWidth="745.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.iesalandalus.programacion.alquilervehiculos.vista.grafica.controladores.VentanaMostrarVehiculo">
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="187.0" prefWidth="745.0" style="-fx-background-color: #f4ebf9;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.iesalandalus.programacion.alquilervehiculos.vista.grafica.controladores.VentanaMostrarVehiculo">
    <children>
-      <TableView fx:id="tvVehiculos" prefHeight="281.0" prefWidth="600.0">
+      <TableView fx:id="tvVehiculos" prefHeight="281.0" prefWidth="600.0" style="-fx-border-color: #e6d1f2;">
          <columns>
             <TableColumn fx:id="tcMatricula" maxWidth="1.7976931348623157E308" prefWidth="141.0" text="MATRÍCULA" />
             <TableColumn fx:id="tcMarca" maxWidth="1.7976931348623157E308" prefWidth="133.0" text="MARCA" />
@@ -22,6 +23,9 @@
          <VBox.margin>
             <Insets bottom="7.0" left="330.0" top="7.0" />
          </VBox.margin>
+         <font>
+            <Font name="Times New Roman Bold" size="13.0" />
+         </font>
       </Button>
    </children>
 </VBox>

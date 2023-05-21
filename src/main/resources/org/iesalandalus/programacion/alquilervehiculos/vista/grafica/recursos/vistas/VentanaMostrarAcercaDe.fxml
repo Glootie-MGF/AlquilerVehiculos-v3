@@ -7,13 +7,13 @@
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
 
-
-<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="370.0" prefWidth="449.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.iesalandalus.programacion.alquilervehiculos.vista.grafica.controladores.VentanaMostrarAcercaDe">
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="370.0" prefWidth="449.0" style="-fx-background-color: #f4ebf9;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.iesalandalus.programacion.alquilervehiculos.vista.grafica.controladores.VentanaMostrarAcercaDe">
    <children>
       <HBox prefHeight="268.0" prefWidth="449.0">
          <children>
-            <ImageView fitHeight="228.0" fitWidth="219.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="219.0" fitWidth="229.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../imagenes/Logo-ies.png" />
                </image>
@@ -35,26 +35,41 @@
          <VBox.margin>
             <Insets left="5.0" />
          </VBox.margin>
+         <font>
+            <Font name="Times New Roman" size="14.0" />
+         </font>
       </Label>
       <Label text="1º DAM - Programación">
          <VBox.margin>
             <Insets left="42.0" />
          </VBox.margin>
+         <font>
+            <Font name="Times New Roman Bold Italic" size="14.0" />
+         </font>
       </Label>
       <Label text="Realizado por:">
          <VBox.margin>
             <Insets left="300.0" />
          </VBox.margin>
+         <font>
+            <Font name="Times New Roman" size="14.0" />
+         </font>
       </Label>
-      <Label prefHeight="38.0" prefWidth="136.0" text="Marta García Fernández">
+      <Label prefHeight="28.0" prefWidth="149.0" text="Marta García Fernández">
          <VBox.margin>
-            <Insets left="274.0" />
+            <Insets bottom="20.0" left="274.0" />
          </VBox.margin>
+         <font>
+            <Font name="Times New Roman Bold Italic" size="14.0" />
+         </font>
       </Label>
       <Button fx:id="btCancelar" mnemonicParsing="false" onAction="#cancelar" text="CANCELAR">
          <VBox.margin>
-            <Insets bottom="10.0" left="170.0" />
+            <Insets bottom="12.0" left="170.0" />
          </VBox.margin>
+         <font>
+            <Font name="Times New Roman Bold" size="13.0" />
+         </font>
       </Button>
    </children>
 </VBox>

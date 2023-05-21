@@ -8,8 +8,9 @@
 <?import javafx.scene.layout.ColumnConstraints?>
 <?import javafx.scene.layout.GridPane?>
 <?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
 
-<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="360.0" prefWidth="406.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.iesalandalus.programacion.alquilervehiculos.vista.grafica.controladores.VentanaInsertarVehiculo">
+<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="360.0" prefWidth="377.0" style="-fx-background-color: #f4ebf9;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.iesalandalus.programacion.alquilervehiculos.vista.grafica.controladores.VentanaInsertarVehiculo">
    <columnConstraints>
       <ColumnConstraints hgrow="SOMETIMES" maxWidth="178.0" minWidth="10.0" prefWidth="131.0" />
       <ColumnConstraints hgrow="SOMETIMES" maxWidth="232.0" minWidth="10.0" prefWidth="232.0" />
@@ -25,9 +26,18 @@
       <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
    </rowConstraints>
    <children>
-      <Label alignment="CENTER_RIGHT" contentDisplay="RIGHT" prefHeight="17.0" prefWidth="113.0" text="PMA" GridPane.rowIndex="6" />
-      <Label alignment="CENTER_RIGHT" contentDisplay="RIGHT" layoutX="10.0" layoutY="25.0" prefHeight="17.0" prefWidth="116.0" text="PLAZAS" GridPane.rowIndex="5" />
-      <Label alignment="CENTER_RIGHT" contentDisplay="RIGHT" prefHeight="17.0" prefWidth="113.0" text="MATRÍCULA" GridPane.rowIndex="2" />
+      <Label alignment="CENTER_RIGHT" contentDisplay="RIGHT" prefHeight="17.0" prefWidth="113.0" text="PMA" GridPane.rowIndex="6">
+         <font>
+            <Font name="Times New Roman" size="13.0" />
+         </font></Label>
+      <Label alignment="CENTER_RIGHT" contentDisplay="RIGHT" layoutX="10.0" layoutY="25.0" prefHeight="17.0" prefWidth="116.0" text="PLAZAS" GridPane.rowIndex="5">
+         <font>
+            <Font name="Times New Roman" size="13.0" />
+         </font></Label>
+      <Label alignment="CENTER_RIGHT" contentDisplay="RIGHT" prefHeight="17.0" prefWidth="113.0" text="MATRÍCULA" GridPane.rowIndex="2">
+         <font>
+            <Font name="Times New Roman" size="13.0" />
+         </font></Label>
       <TextField fx:id="tfCilindrada" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="31.0" prefWidth="207.0" GridPane.columnIndex="1" GridPane.rowIndex="4">
          <GridPane.margin>
             <Insets left="7.0" />
@@ -43,25 +53,43 @@
             <Insets left="7.0" />
          </GridPane.margin>
       </TextField>
-      <Button fx:id="btAceptarVehiculo" alignment="CENTER" contentDisplay="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#guardarVehiculo" prefHeight="26.0" prefWidth="73.0" text="ACEPTAR" GridPane.columnIndex="1" GridPane.rowIndex="7">
+      <Button fx:id="btAceptarVehiculo" alignment="CENTER" contentDisplay="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#guardarVehiculo" prefHeight="26.0" prefWidth="84.0" text="ACEPTAR" GridPane.columnIndex="1" GridPane.rowIndex="7">
          <GridPane.margin>
-            <Insets left="19.0" />
+            <Insets left="12.0" />
          </GridPane.margin>
+         <font>
+            <Font name="Times New Roman Bold" size="13.0" />
+         </font>
       </Button>
       <Button fx:id="btCancelar" alignment="CENTER" cancelButton="true" contentDisplay="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#cancelar" prefHeight="26.0" prefWidth="92.0" text="CANCELAR" GridPane.columnIndex="1" GridPane.rowIndex="7">
          <GridPane.margin>
             <Insets left="105.0" />
          </GridPane.margin>
+         <font>
+            <Font name="Times New Roman Bold" size="13.0" />
+         </font>
       </Button>
-      <Label alignment="CENTER_RIGHT" contentDisplay="RIGHT" prefHeight="17.0" prefWidth="113.0" text="TIPO" GridPane.rowIndex="3" />
-      <ComboBox fx:id="cbTipoVehiculo" onAction="#seleccionarTipoVehiculo" prefHeight="26.0" prefWidth="190.0" promptText="Seleccione" GridPane.columnIndex="1" GridPane.rowIndex="3">
+      <Label alignment="CENTER_RIGHT" contentDisplay="RIGHT" prefHeight="17.0" prefWidth="113.0" text="TIPO" GridPane.rowIndex="3">
+         <font>
+            <Font name="Times New Roman" size="13.0" />
+         </font></Label>
+      <ComboBox fx:id="cbTipoVehiculo" onAction="#seleccionarTipoVehiculo" prefHeight="26.0" prefWidth="202.0" promptText="Seleccione" GridPane.columnIndex="1" GridPane.rowIndex="3">
          <GridPane.margin>
             <Insets left="7.0" />
          </GridPane.margin>
       </ComboBox>
-      <Label alignment="CENTER_RIGHT" contentDisplay="RIGHT" prefHeight="17.0" prefWidth="113.0" text="MARCA" />
-      <Label alignment="CENTER_RIGHT" contentDisplay="RIGHT" prefHeight="17.0" prefWidth="113.0" text="MODELO" GridPane.rowIndex="1" />
-      <Label alignment="CENTER_RIGHT" contentDisplay="RIGHT" prefHeight="17.0" prefWidth="113.0" text="CILINDRADA" GridPane.rowIndex="4" />
+      <Label alignment="CENTER_RIGHT" contentDisplay="RIGHT" prefHeight="17.0" prefWidth="113.0" text="MARCA">
+         <font>
+            <Font name="Times New Roman" size="13.0" />
+         </font></Label>
+      <Label alignment="CENTER_RIGHT" contentDisplay="RIGHT" prefHeight="17.0" prefWidth="113.0" text="MODELO" GridPane.rowIndex="1">
+         <font>
+            <Font name="Times New Roman" size="13.0" />
+         </font></Label>
+      <Label alignment="CENTER_RIGHT" contentDisplay="RIGHT" prefHeight="17.0" prefWidth="113.0" text="CILINDRADA" GridPane.rowIndex="4">
+         <font>
+            <Font name="Times New Roman" size="13.0" />
+         </font></Label>
       <TextField fx:id="tfMarca" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="31.0" prefWidth="207.0" GridPane.columnIndex="1">
          <GridPane.margin>
             <Insets left="7.0" />
